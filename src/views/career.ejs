@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="career.css">
+    <%- include('globals/header') %>
+</head>
+
+<body>
+    <%- include('globals/navbar2') %>
+
+        <!-- ============================================= SIDEBAR ============================================= -->
+
+        <%- include('globals/sidebar') %>
+
+            <!-- ============================================= MAIN SECTION ============================================= -->
+
+            <main>
+                <section class="about_section sections">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="main_head">
+                                    <h1>JOIN US</h1>
+                                    <p>Welcome to Beco Consulting! We are your trusted partners in the world of business
+                                        consulting, offering expert advice and tailored solutions to optimize your
+                                        company's potential.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- ============================================= VALUES ============================================= -->
+
+            <section class="our_values sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="img//career/career1.webp" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="values_info sections_head">
+                                <span class="info_head">OUR VALUES</span>
+                                <h2>Managing tasks, progress, and success</h2>
+                                <p>"At Beco, we believe that every business has the potential to thrive and achieve
+                                    greatness.
+                                    We are a team of passionate and experienced professionals committed to your
+                                    success."
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="values_fig">
+                                        <h1>195</h1>
+                                        <p>Certified specialists in various fields</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="values_fig">
+                                        <h1>135K</h1>
+                                        <p>Happy clients with successful business</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================= CAREERS ============================================= -->
+
+            <section class="careers_lists sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="members_head centered_heading">
+                            <span class="info_head">CAREERS LIST</span>
+                            <h1>Join our big family</h1>
+                            <p class="para_style">Our comprehensive range of senior care services is designed to address
+                                the diverse needs of older adults. We believe in treating our clients with dignity,
+                                respect, and empathy, fostering a sense of trust.</p>
+                        </div>
+                    </div>
+                    <% careers.forEach((career)=>{ %>
+                        <div class="careers_blocks">
+                            <div class="row d-flex align-items-center ">
+                                <div class="col-lg-4 col-md-">
+                                    <div class="career_list">
+                                        <h2 class="m-0"><%- career.name %></h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-">
+                                    <div class="career_list">
+                                        <ul>
+                                            <li><i class="fa-solid fa-clock"></i><%- career.time %></li>
+                                            <li class="li_borders"><i class="fa-solid fa-clock"></i><%- career.type %>
+                                            </li>
+                                            <li><i class="fa-solid fa-clock"></i><%- career.location %></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="career_list">
+                                        <button class="primary_btn">Apply Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <% }) %>
+
+            </section>
+
+            <!-- ============================================= HEADING ============================================= -->
+
+            <%- include('globals/newsletter') %>
+
+
+                <%- include('globals/footer') %>
+
+
+                    <%- include('globals/scripts') %>
+
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #f23801;
+    --secondary-color: #f7e4d6;
+    --black-color: black;
+    --white-color: white;
+    --para-color: rgb(67, 67, 67);
+    --light-grey: rgb(235, 235, 235);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+/* ============================================= PRE-DEFINED ============================================= */
+
+.sections p {
+    margin-bottom: 0;
+}
+
+
+/* ============================================= MAIN ============================================= */
+
+.about_section {
+    /* background: url('D:/PROJECTS/beco/assets/img/about/about-bg.png'); */
+    background: rgba(0, 0, 0, 0.7) url('https://assets-global.website-files.com/64f5753b4e82f3262cbb7e3d/65031046b1c39b4b1d42832a_mario-gogh).webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ============================================= VALUES ============================================= */
+
+.our_values {
+    margin-top: 7rem;
+}
+
+.our_values img {
+    border-radius: 10px;
+    margin-top: 1rem;
+    width: 95%;
+}
+
+.our_values .values_info {
+    border-bottom: 1px solid var(--light-grey);
+    padding-bottom: 1rem;
+}
+
+.our_values .values_info h2 {
+    padding: 1.4rem 0;
+}
+
+.our_values .values_info p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.our_values .values_fig {
+    background-color: var(--light-grey);
+    padding: 1.8rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.values_fig h1 {
+    color: var(--primary-color);
+}
+
+/* ============================================= CAREERS LIST ============================================= */
+
+
+.careers_lists{
+    margin-bottom: 5rem;
+}
+.careers_lists .centered_heading{
+    padding-bottom: 3rem;
+}
+
+.careers_blocks {
+    background-color: var(--light-grey);
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    margin-top: 1.2rem;
+}
+
+.career_list ul {
+    padding: 0;
+    padding-top: 1rem;
+}
+
+.career_list ul li {
+    display: inline-block;
+}
+
+.career_list ul .li_borders {
+    border-right: 1px solid var(--para-color);
+    border-left: 1px solid var(--para-color);
+    padding: 0 1.4rem;
+    margin: 0 1.4rem;
+}
+
+.career_list ul li i {
+    color: var(--primary-color);
+    padding-right: 0.7rem;
+}
+
+/* ============================================= HEADING ============================================= */
